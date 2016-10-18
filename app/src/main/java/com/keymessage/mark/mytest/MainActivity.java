@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 判断程序是否在前台运行
      *
-     * @param packageName
-     * @return
+     * @param packageName 包名
+     * @return 包名对应的app是否在前台运行
      */
     public boolean isOpen(String packageName) {
         if (packageName.equals("") | packageName == null)
