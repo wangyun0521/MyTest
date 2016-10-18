@@ -4,11 +4,14 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.tv_appname);
         boolean isRunning = isOpen("com.keymessage.mark.mytest");
         textView.setText("" + isRunning);
+        Log.d(TAG,"");
     }
 
 
