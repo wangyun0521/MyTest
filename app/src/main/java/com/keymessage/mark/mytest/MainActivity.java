@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.tv_appname);
         boolean isRunning = isOpen("com.keymessage.mark.mytest");
         textView.setText("" + isRunning);
-        Log.d(TAG,"");
+        Log.d(TAG, "");
     }
 
 
